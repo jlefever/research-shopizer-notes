@@ -1,3 +1,5 @@
+*(These are some of my loose notes on comparing these two tools.)*
+
 # DV8 and RefBot
 
 ## Goal
@@ -22,9 +24,15 @@ RefBot is a guided refactoring tool. Intuitively, it should start refactoring wi
 4. *Table of Classes* - The report gives us a table of classes. The columns are the metrics given above and code smells, as well as "Bug Likelihood" and "Is Critical". I'm not sure what these are.
 5. *Table of Solutions* - A table of recommend solutions in order to refactor the project. Each solution is assigned a cluster.
 
-A *solution* is a list of *actions*. A solution is found using an optimization algorithm. Maybe the files involved in a solution overlap with DV8's flaws or roots?
+## Potential Mappings
 
-RefBot has some notion of *cluster centers* that I cannot seem to find more about. Peraphs this overlaps with DV8's findings?
+Mapping is difficult because DV8 and RefBot have different goals.
+
+Because of RefBot's use of an optimization algorithm, it provides less insight into the "why" a particular refactoring is useful. It is more of a blackbox.
+
+ - A *solution* is a list of *actions*. A solution is found using an optimization algorithm. Maybe the files involved in a solution overlap with DV8's flaws or roots?
+ - RefBot has some notion of *cluster centers* that I cannot seem to find more about. Perhaps this overlaps with DV8's findings?
+ - What about RefBot's identified code smells?
 
 ## References
 
